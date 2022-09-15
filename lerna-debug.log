@@ -1,0 +1,22 @@
+0 silly argv {
+0 silly argv   _: [ 'version' ],
+0 silly argv   'conventional-commits': true,
+0 silly argv   conventionalCommits: true,
+0 silly argv   y: true,
+0 silly argv   yes: true,
+0 silly argv   push: false,
+0 silly argv   lernaVersion: '4.0.0',
+0 silly argv   '$0': 'node_modules/lerna/cli.js'
+0 silly argv }
+1 notice cli v4.0.0
+2 verbose rootPath /Users/forehalo/code/lerna-version-reproduce
+3 info versioning independent
+4 error Error: Unsupported URL Type "workspace:": workspace:*
+4 error     at unsupportedURLType (/Users/forehalo/code/lerna-version-reproduce/node_modules/npm-package-arg/npa.js:246:15)
+4 error     at fromURL (/Users/forehalo/code/lerna-version-reproduce/node_modules/npm-package-arg/npa.js:306:13)
+4 error     at Function.resolve (/Users/forehalo/code/lerna-version-reproduce/node_modules/npm-package-arg/npa.js:76:12)
+4 error     at /Users/forehalo/code/lerna-version-reproduce/node_modules/@lerna/package-graph/index.js:66:30
+4 error     at Array.forEach (<anonymous>)
+4 error     at /Users/forehalo/code/lerna-version-reproduce/node_modules/@lerna/package-graph/index.js:60:38
+4 error     at Map.forEach (<anonymous>)
+4 error     at new PackageGraph (/Users/forehalo/code/lerna-version-reproduce/node_modules/@lerna/package-graph/index.js:49:10)
