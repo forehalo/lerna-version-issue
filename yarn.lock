@@ -1268,11 +1268,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"a@workspace:*, a@workspace:apps/a":
+"a@workspace:apps/a":
   version: 0.0.0-use.local
   resolution: "a@workspace:apps/a"
   dependencies:
-    a: "workspace:*"
+    b: "workspace:*"
   languageName: unknown
   linkType: soft
 
@@ -1444,7 +1444,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"b@workspace:apps/b":
+"b@workspace:*, b@workspace:apps/b":
   version: 0.0.0-use.local
   resolution: "b@workspace:apps/b"
   languageName: unknown
