@@ -1273,6 +1273,7 @@ __metadata:
   resolution: "a@workspace:apps/a"
   dependencies:
     b: "workspace:*"
+    lodash: ^4.17.21
   languageName: unknown
   linkType: soft
 

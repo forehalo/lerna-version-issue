@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - name: Use Node.js 16.x
         uses: actions/setup-node@v3
         with:
@@ -18,4 +20,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Version
-        run: yarn lerna version --conventional-commits -y --no-push
+        run: |
+          git config --global user.email "forehalo@gmail.com"
+          git config --global user.name "forehalo"
+          yarn lerna version --conventional-commits -y --no-push
